@@ -109,7 +109,9 @@
       mainTimeline.add(intro);
       mainTimeline.add(bg,0);
 
-      document.querySelector('body').addEventListener('click', function() {
+      var touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+
+      document.querySelector('body').addEventListener(touchEvent, function() {
         var sharkPosition =  duck._gsTransform.x - 15 ;
         TweenMax.set(shark, { x:sharkPosition })
         sharkTimeline.play();
