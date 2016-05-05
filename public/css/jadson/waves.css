@@ -1,9 +1,18 @@
-#waves{
-  width: 20%;
-  margin-top: 5%;
-  display: inline-block;
+@media screen and (max-device-width: 700px) {
+  #waves{
+    width: 70%;
+    margin-top: 5%;
+    display: inline-block;
+  }
 }
-
 body{
   background-color: #464646;
+}
+@media screen and (min-device-width: 701px) {
+  /* For desktop: */
+  #waves{
+    width: 20%;
+    margin-top: 5%;
+    display: inline-block;
+  }
 }
