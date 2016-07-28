@@ -47,7 +47,7 @@
           var blah = parseInt($(this).attr('id'))
           var num = ("0" + (blah+9)).slice(-2);
           var date = new Date;
-          var date1 = "2016-0" +  (date.getMonth()+1) + "-" + date.getDate();
+          var date1 = "2016-0" +  (date.getMonth()+1) + "-" + (date.getDate()-1);
           var url = "http://live-cam-archive.cdn-surfline.com/hbpiersscam/hbpiersscam."+ num +"10."+ date1 + ".mp4"
           $iframe.attr('src', url);
         });
