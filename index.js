@@ -31,6 +31,9 @@ app
   })
   .get('/perfect/alpha', function (req, res) {
     res.render('perfect/alpha.html');
+  })
+  .get('/survey', function (req, res) {
+    res.render('survey/index.html');
   });
 
 var server = app.listen(3000, function () {
